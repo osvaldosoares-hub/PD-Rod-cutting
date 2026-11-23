@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# IDEs / Sistema Operacional
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Materiais de apresentação / vídeos pesados (não subir para o GitHub)
+slide/
+*.mp4
+*.mov
+*.mkv
+*.avi

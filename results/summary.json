@@ -1,0 +1,97 @@
+{
+  "environment": {
+    "timestamp": "2026-11-22T13:46:13",
+    "os": "Windows 11 (AMD64)",
+    "python_version": "3.13.1",
+    "cpu": "13th Gen Intel(R) Core(TM) i5-13420H",
+    "physical_cores": 8,
+    "logical_cores": 12,
+    "ram_gb": 23.71,
+    "cpu_affinity_pinned_core0": true
+  },
+  "total_benchmark_seconds": 208.76,
+  "total_instances_verified_all": 1220,
+  "experiment_1": {
+    "sizes_min": 1,
+    "sizes_max": 22,
+    "num_sizes": 22,
+    "instances_per_size": 10,
+    "total_instances_verified": 220,
+    "mismatches": 0,
+    "max_n_naive_mean_ms": 587.4818599999344,
+    "max_n_memo_mean_ms": 0.058809999791265,
+    "max_n_iter_mean_ms": 0.038050000148359686,
+    "max_n_speedup_iter_vs_naive": 15439.733448339037,
+    "max_n_speedup_memo_vs_naive": 9989.489237971271,
+    "naive_exp_fit_n_ge_10": {
+      "base_per_step": 2.000211761557912,
+      "log2_slope": 1.0001527455884571,
+      "log2_intercept": -12.659397116311409,
+      "r2": 0.9982937713046517
+    },
+    "example_n10": {
+      "n": 10,
+      "prices": [
+        6,
+        14,
+        22,
+        30,
+        34,
+        43,
+        51,
+        54,
+        56,
+        61
+      ],
+      "naive": {
+        "revenue": 74,
+        "cuts": null
+      },
+      "memoized": {
+        "revenue": 74,
+        "cuts": [
+          2,
+          4,
+          4
+        ]
+      },
+      "iterative": {
+        "revenue": 74,
+        "cuts": [
+          2,
+          4,
+          4
+        ]
+      }
+    }
+  },
+  "experiment_2": {
+    "sizes_min": 10,
+    "sizes_max": 1990,
+    "step": 20,
+    "num_sizes": 100,
+    "instances_per_size": 10,
+    "total_instances_verified": 1000,
+    "mismatches": 0,
+    "max_n_memo_mean_ms": 395.76415000028646,
+    "max_n_memo_std_ms": 17.289430509253897,
+    "max_n_iter_mean_ms": 155.3422299999511,
+    "max_n_iter_std_ms": 6.863427331613722,
+    "ratio_memo_over_iter_ge_100_mean": 2.5812586962500355,
+    "ratio_memo_over_iter_ge_100_std": 0.24146107672090306,
+    "memo_ns_per_n2_ge_500_mean": 92.2894839795631,
+    "iter_ns_per_n2_ge_500_mean": 36.222122476522415,
+    "quadratic_fit_memoized": {
+      "a": 0.00011314390471808709,
+      "b": -0.03032279713794102,
+      "c": 5.6953918773130425,
+      "r2": 0.9895735621465732
+    },
+    "quadratic_fit_iterative": {
+      "a": 4.5241873201668635e-05,
+      "b": -0.012054120723755937,
+      "c": 1.8646180840001108,
+      "r2": 0.9879551810333106
+    }
+  }
+}
