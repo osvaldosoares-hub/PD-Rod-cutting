@@ -2,7 +2,7 @@
 
 Experimento da disciplina de **Projeto e Análise de Algoritmos** (Tema **7.2 — Corte de Barras**).
 
-* **Vídeo explicativo (YouTube):** *(https://youtu.be/EdKaLnjVWRw)*
+* **Vídeo explicativo (YouTube):** https://youtu.be/EdKaLnjVWRw
 
 ## O Problema
 
@@ -95,15 +95,13 @@ Tabela completa em [`results/exp2_dp_algorithms.csv`](results/exp2_dp_algorithms
 ## Estrutura e Execução
 
 ```text
-├── main.py              # Roda os experimentos, gera os gráficos e o PDF
+├── main.py              # Roda os experimentos, gera os gráficos
 ├── requirements.txt
-├── RELATORIO.pdf
 ├── src/
 │   ├── rod_cutting.py   # Algoritmos e validador de solução
 │   ├── generator.py     # Geração das tabelas de preços
 │   ├── benchmark.py     # Medição de tempo e verificação de corretude
-│   ├── plots.py         # Geração das figuras
-│   └── report_pdf.py    # Geração do PDF
+│   └── plots.py         # Geração das figuras
 ├── tests/
 │   └── test_rod_cutting.py
 ├── results/             # CSVs e summary.json já gerados
@@ -115,6 +113,6 @@ Os resultados e gráficos já estão prontos no repositório. Para rodar novamen
 ```bash
 pip install -r requirements.txt
 python -m pytest -v
-python main.py               # reexecuta tudo (benchmarks, gráficos e PDF)
-python main.py --plots-only  # regera só gráficos e PDF a partir de results/
+python main.py               # reexecuta benchmarks e gráficos
+python main.py --plots-only  # regera só gráficos a partir de results/
 ```
